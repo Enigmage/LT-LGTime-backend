@@ -16,4 +16,6 @@ app.use(express.static("uploads"));
 app.use("/auth", authRouter);
 app.use("/posts", postRouter);
 
+app.get("/", (req, res) => res.send("Api fucking works"));
+
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
