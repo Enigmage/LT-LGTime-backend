@@ -1,0 +1,26 @@
+{
+    "name": "quizz-api",
+    "version": "1.0.0",
+    "description": "API for quizz app",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon index.js"
+    },
+    "author": "Ali Zaidi",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-validator": "^6.11.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.12.12",
+        "multer": "^1.4.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
