@@ -6,12 +6,12 @@ import { authRouter, postRouter } from "./routes/index.js";
 
 dotenv.config();
 initiateDatabaseConnection();
-const frontendUrl = process.env.FRONTEND_URL;
+// const frontendUrl = process.env.FRONTEND_URL;
 const PORT = process.env.PORT || 8000;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ credentials: true, origin: frontendUrl }));
+app.use(cors(/*{ credentials: true, origin: frontendUrl }*/));
 app.use(express.static("uploads"));
 app.use("/auth", authRouter);
 app.use("/posts", postRouter);
